@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Pillars.Core.Player.Models
+  commentId: N:Pillars.Core.Player.Models
+  id: Pillars.Core.Player.Models
+  children:
+  - Pillars.Core.Player.Models.PiPlayer
+  langs:
+  - csharp
+  - vb
+  name: Pillars.Core.Player.Models
+  nameWithType: Pillars.Core.Player.Models
+  fullName: Pillars.Core.Player.Models
+  type: Namespace
+  assemblies:
+  - Pillars
+references:
+- uid: Pillars.Core.Player.Models.PiPlayer
+  commentId: T:Pillars.Core.Player.Models.PiPlayer
+  href: Pillars.Core.Player.Models.PiPlayer.html
+  name: PiPlayer
+  nameWithType: PiPlayer
+  fullName: Pillars.Core.Player.Models.PiPlayer

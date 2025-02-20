@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Pillars.Core.Server.Helpers
+  commentId: N:Pillars.Core.Server.Helpers
+  id: Pillars.Core.Server.Helpers
+  children:
+  - Pillars.Core.Server.Helpers.ServerHelper
+  langs:
+  - csharp
+  - vb
+  name: Pillars.Core.Server.Helpers
+  nameWithType: Pillars.Core.Server.Helpers
+  fullName: Pillars.Core.Server.Helpers
+  type: Namespace
+  assemblies:
+  - Pillars
+references:
+- uid: Pillars.Core.Server.Helpers.ServerHelper
+  commentId: T:Pillars.Core.Server.Helpers.ServerHelper
+  href: Pillars.Core.Server.Helpers.ServerHelper.html
+  name: ServerHelper
+  nameWithType: ServerHelper
+  fullName: Pillars.Core.Server.Helpers.ServerHelper

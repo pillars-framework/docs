@@ -1,0 +1,109 @@
+### YamlMime:TableOfContent
+items:
+- uid: Pillars
+  name: Pillars
+  type: Namespace
+  items:
+  - uid: Pillars.Bootstrapper
+    name: Bootstrapper
+    type: Class
+  - uid: Pillars.Plugin
+    name: Plugin
+    type: Class
+- uid: Pillars.Core.Configuration.Models
+  name: Pillars.Core.Configuration.Models
+  type: Namespace
+  items:
+  - uid: Pillars.Core.Configuration.Models.AppSettings
+    name: AppSettings
+    type: Class
+- uid: Pillars.Core.DI.Helpers
+  name: Pillars.Core.DI.Helpers
+  type: Namespace
+  items:
+  - uid: Pillars.Core.DI.Helpers.DependencyGraphHelper
+    name: DependencyGraphHelper
+    type: Class
+- uid: Pillars.Core.DI.Interfaces
+  name: Pillars.Core.DI.Interfaces
+  type: Namespace
+  items:
+  - uid: Pillars.Core.DI.Interfaces.IController
+    name: IController
+    type: Interface
+  - uid: Pillars.Core.DI.Interfaces.ISettings
+    name: ISettings
+    type: Interface
+- uid: Pillars.Core.Logging
+  name: Pillars.Core.Logging
+  type: Namespace
+  items:
+  - uid: Pillars.Core.Logging.ConsoleThemes
+    name: ConsoleThemes
+    type: Class
+  - uid: Pillars.Core.Logging.LoggingExtensions
+    name: LoggingExtensions
+    type: Class
+- uid: Pillars.Core.Player.Models
+  name: Pillars.Core.Player.Models
+  type: Namespace
+  items:
+  - uid: Pillars.Core.Player.Models.PiPlayer
+    name: PiPlayer
+    type: Class
+- uid: Pillars.Core.Server.Controllers
+  name: Pillars.Core.Server.Controllers
+  type: Namespace
+  items:
+  - uid: Pillars.Core.Server.Controllers.ServerController
+    name: ServerController
+    type: Class
+- uid: Pillars.Core.Server.Data
+  name: Pillars.Core.Server.Data
+  type: Namespace
+  items:
+  - uid: Pillars.Core.Server.Data.SERVERSTATE
+    name: SERVERSTATE
+    type: Enum
+- uid: Pillars.Core.Server.Events
+  name: Pillars.Core.Server.Events
+  type: Namespace
+  items:
+  - uid: Pillars.Core.Server.Events.ServerEvents
+    name: ServerEvents
+    type: Class
+  - uid: Pillars.Core.Server.Events.ServerEvents.ServerShutdownDelegate
+    name: ServerEvents.ServerShutdownDelegate
+    type: Delegate
+  - uid: Pillars.Core.Server.Events.ServerEvents.ServerStartedDelegate
+    name: ServerEvents.ServerStartedDelegate
+    type: Delegate
+- uid: Pillars.Core.Server.Helpers
+  name: Pillars.Core.Server.Helpers
+  type: Namespace
+  items:
+  - uid: Pillars.Core.Server.Helpers.ServerHelper
+    name: ServerHelper
+    type: Class
+- uid: Pillars.Core.Server.Models
+  name: Pillars.Core.Server.Models
+  type: Namespace
+  items:
+  - uid: Pillars.Core.Server.Models.HogWarpConfig
+    name: HogWarpConfig
+    type: Class
+- uid: Pillars.Database.Configuration
+  name: Pillars.Database.Configuration
+  type: Namespace
+  items:
+  - uid: Pillars.Database.Configuration.DatabaseSettings
+    name: DatabaseSettings
+    type: Class
+- uid: Pillars.Database.Controllers
+  name: Pillars.Database.Controllers
+  type: Namespace
+  items:
+  - uid: Pillars.Database.Controllers.DatabaseController
+    name: DatabaseController
+    type: Class
+memberLayout: SamePage

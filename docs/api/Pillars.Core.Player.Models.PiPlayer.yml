@@ -1,0 +1,1029 @@
+### YamlMime:ManagedReference
+items:
+- uid: Pillars.Core.Player.Models.PiPlayer
+  commentId: T:Pillars.Core.Player.Models.PiPlayer
+  id: PiPlayer
+  parent: Pillars.Core.Player.Models
+  children:
+  - Pillars.Core.Player.Models.PiPlayer.#ctor(HogWarpSdk.Game.Player)
+  - Pillars.Core.Player.Models.PiPlayer.ConnectionId
+  - Pillars.Core.Player.Models.PiPlayer.Direction
+  - Pillars.Core.Player.Models.PiPlayer.DiscordId
+  - Pillars.Core.Player.Models.PiPlayer.Gender
+  - Pillars.Core.Player.Models.PiPlayer.House
+  - Pillars.Core.Player.Models.PiPlayer.Id
+  - Pillars.Core.Player.Models.PiPlayer.InternalPlayer
+  - Pillars.Core.Player.Models.PiPlayer.IsInAir
+  - Pillars.Core.Player.Models.PiPlayer.IsMounted
+  - Pillars.Core.Player.Models.PiPlayer.Kick
+  - Pillars.Core.Player.Models.PiPlayer.Player
+  - Pillars.Core.Player.Models.PiPlayer.Position
+  - Pillars.Core.Player.Models.PiPlayer.Speed
+  - Pillars.Core.Player.Models.PiPlayer.UniqueId
+  - Pillars.Core.Player.Models.PiPlayer.Username
+  langs:
+  - csharp
+  - vb
+  name: PiPlayer
+  nameWithType: PiPlayer
+  fullName: Pillars.Core.Player.Models.PiPlayer
+  type: Class
+  source:
+    remote:
+      path: src/Server/Core/Player/Models/PiPlayer.Mappings.cs
+      branch: main
+      repo: https://github.com/pillars-framework/docs
+    id: PiPlayer
+    path: ../src/Server/Core/Player/Models/PiPlayer.Mappings.cs
+    startLine: 2
+  assemblies:
+  - Pillars
+  namespace: Pillars.Core.Player.Models
+  syntax:
+    content: public sealed class PiPlayer
+    content.vb: Public NotInheritable Class PiPlayer
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Pillars.Core.Player.Models.PiPlayer.#ctor(HogWarpSdk.Game.Player)
+  commentId: M:Pillars.Core.Player.Models.PiPlayer.#ctor(HogWarpSdk.Game.Player)
+  id: '#ctor(HogWarpSdk.Game.Player)'
+  parent: Pillars.Core.Player.Models.PiPlayer
+  langs:
+  - csharp
+  - vb
+  name: PiPlayer(Player)
+  nameWithType: PiPlayer.PiPlayer(Player)
+  fullName: Pillars.Core.Player.Models.PiPlayer.PiPlayer(HogWarpSdk.Game.Player)
+  type: Constructor
+  source:
+    remote:
+      path: src/Server/Core/Player/Models/PiPlayer.cs
+      branch: main
+      repo: https://github.com/pillars-framework/docs
+    id: .ctor
+    path: ../src/Server/Core/Player/Models/PiPlayer.cs
+    startLine: 2
+  assemblies:
+  - Pillars
+  namespace: Pillars.Core.Player.Models
+  syntax:
+    content: public PiPlayer(Player player)
+    parameters:
+    - id: player
+      type: HogWarpSdk.Game.Player
+    content.vb: Public Sub New(player As Player)
+  overload: Pillars.Core.Player.Models.PiPlayer.#ctor*
+  nameWithType.vb: PiPlayer.New(Player)
+  fullName.vb: Pillars.Core.Player.Models.PiPlayer.New(HogWarpSdk.Game.Player)
+  name.vb: New(Player)
+- uid: Pillars.Core.Player.Models.PiPlayer.Player
+  commentId: P:Pillars.Core.Player.Models.PiPlayer.Player
+  id: Player
+  parent: Pillars.Core.Player.Models.PiPlayer
+  langs:
+  - csharp
+  - vb
+  name: Player
+  nameWithType: PiPlayer.Player
+  fullName: Pillars.Core.Player.Models.PiPlayer.Player
+  type: Property
+  source:
+    remote:
+      path: src/Server/Core/Player/Models/PiPlayer.cs
+      branch: main
+      repo: https://github.com/pillars-framework/docs
+    id: Player
+    path: ../src/Server/Core/Player/Models/PiPlayer.cs
+    startLine: 4
+  assemblies:
+  - Pillars
+  namespace: Pillars.Core.Player.Models
+  syntax:
+    content: public Player Player { get; set; }
+    parameters: []
+    return:
+      type: HogWarpSdk.Game.Player
+    content.vb: Public Property Player As Player
+  overload: Pillars.Core.Player.Models.PiPlayer.Player*
+- uid: Pillars.Core.Player.Models.PiPlayer.DiscordId
+  commentId: P:Pillars.Core.Player.Models.PiPlayer.DiscordId
+  id: DiscordId
+  parent: Pillars.Core.Player.Models.PiPlayer
+  langs:
+  - csharp
+  - vb
+  name: DiscordId
+  nameWithType: PiPlayer.DiscordId
+  fullName: Pillars.Core.Player.Models.PiPlayer.DiscordId
+  type: Property
+  source:
+    remote:
+      path: src/Server/Core/Player/Models/PiPlayer.cs
+      branch: main
+      repo: https://github.com/pillars-framework/docs
+    id: DiscordId
+    path: ../src/Server/Core/Player/Models/PiPlayer.cs
+    startLine: 6
+  assemblies:
+  - Pillars
+  namespace: Pillars.Core.Player.Models
+  syntax:
+    content: public ulong DiscordId { get; }
+    parameters: []
+    return:
+      type: System.UInt64
+    content.vb: Public ReadOnly Property DiscordId As ULong
+  overload: Pillars.Core.Player.Models.PiPlayer.DiscordId*
+- uid: Pillars.Core.Player.Models.PiPlayer.InternalPlayer
+  commentId: P:Pillars.Core.Player.Models.PiPlayer.InternalPlayer
+  id: InternalPlayer
+  parent: Pillars.Core.Player.Models.PiPlayer
+  langs:
+  - csharp
+  - vb
+  name: InternalPlayer
+  nameWithType: PiPlayer.InternalPlayer
+  fullName: Pillars.Core.Player.Models.PiPlayer.InternalPlayer
+  type: Property
+  source:
+    remote:
+      path: src/Server/Core/Player/Models/PiPlayer.Mappings.cs
+      branch: main
+      repo: https://github.com/pillars-framework/docs
+    id: InternalPlayer
+    path: ../src/Server/Core/Player/Models/PiPlayer.Mappings.cs
+    startLine: 4
+  assemblies:
+  - Pillars
+  namespace: Pillars.Core.Player.Models
+  syntax:
+    content: public IPlayer InternalPlayer { get; }
+    parameters: []
+    return:
+      type: HogWarpSdk.Internal.IPlayer
+    content.vb: Public ReadOnly Property InternalPlayer As IPlayer
+  overload: Pillars.Core.Player.Models.PiPlayer.InternalPlayer*
+- uid: Pillars.Core.Player.Models.PiPlayer.Kick
+  commentId: M:Pillars.Core.Player.Models.PiPlayer.Kick
+  id: Kick
+  parent: Pillars.Core.Player.Models.PiPlayer
+  langs:
+  - csharp
+  - vb
+  name: Kick()
+  nameWithType: PiPlayer.Kick()
+  fullName: Pillars.Core.Player.Models.PiPlayer.Kick()
+  type: Method
+  source:
+    remote:
+      path: src/Server/Core/Player/Models/PiPlayer.Mappings.cs
+      branch: main
+      repo: https://github.com/pillars-framework/docs
+    id: Kick
+    path: ../src/Server/Core/Player/Models/PiPlayer.Mappings.cs
+    startLine: 5
+  assemblies:
+  - Pillars
+  namespace: Pillars.Core.Player.Models
+  syntax:
+    content: public void Kick()
+    content.vb: Public Sub Kick()
+  overload: Pillars.Core.Player.Models.PiPlayer.Kick*
+- uid: Pillars.Core.Player.Models.PiPlayer.Id
+  commentId: P:Pillars.Core.Player.Models.PiPlayer.Id
+  id: Id
+  parent: Pillars.Core.Player.Models.PiPlayer
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: PiPlayer.Id
+  fullName: Pillars.Core.Player.Models.PiPlayer.Id
+  type: Property
+  source:
+    remote:
+      path: src/Server/Core/Player/Models/PiPlayer.Mappings.cs
+      branch: main
+      repo: https://github.com/pillars-framework/docs
+    id: Id
+    path: ../src/Server/Core/Player/Models/PiPlayer.Mappings.cs
+    startLine: 7
+  assemblies:
+  - Pillars
+  namespace: Pillars.Core.Player.Models
+  syntax:
+    content: public ulong Id { get; }
+    parameters: []
+    return:
+      type: System.UInt64
+    content.vb: Public ReadOnly Property Id As ULong
+  overload: Pillars.Core.Player.Models.PiPlayer.Id*
+- uid: Pillars.Core.Player.Models.PiPlayer.ConnectionId
+  commentId: P:Pillars.Core.Player.Models.PiPlayer.ConnectionId
+  id: ConnectionId
+  parent: Pillars.Core.Player.Models.PiPlayer
+  langs:
+  - csharp
+  - vb
+  name: ConnectionId
+  nameWithType: PiPlayer.ConnectionId
+  fullName: Pillars.Core.Player.Models.PiPlayer.ConnectionId
+  type: Property
+  source:
+    remote:
+      path: src/Server/Core/Player/Models/PiPlayer.Mappings.cs
+      branch: main
+      repo: https://github.com/pillars-framework/docs
+    id: ConnectionId
+    path: ../src/Server/Core/Player/Models/PiPlayer.Mappings.cs
+    startLine: 9
+  assemblies:
+  - Pillars
+  namespace: Pillars.Core.Player.Models
+  syntax:
+    content: public uint ConnectionId { get; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: Public ReadOnly Property ConnectionId As UInteger
+  overload: Pillars.Core.Player.Models.PiPlayer.ConnectionId*
+- uid: Pillars.Core.Player.Models.PiPlayer.UniqueId
+  commentId: P:Pillars.Core.Player.Models.PiPlayer.UniqueId
+  id: UniqueId
+  parent: Pillars.Core.Player.Models.PiPlayer
+  langs:
+  - csharp
+  - vb
+  name: UniqueId
+  nameWithType: PiPlayer.UniqueId
+  fullName: Pillars.Core.Player.Models.PiPlayer.UniqueId
+  type: Property
+  source:
+    remote:
+      path: src/Server/Core/Player/Models/PiPlayer.Mappings.cs
+      branch: main
+      repo: https://github.com/pillars-framework/docs
+    id: UniqueId
+    path: ../src/Server/Core/Player/Models/PiPlayer.Mappings.cs
+    startLine: 11
+  assemblies:
+  - Pillars
+  namespace: Pillars.Core.Player.Models
+  syntax:
+    content: public string UniqueId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property UniqueId As String
+  overload: Pillars.Core.Player.Models.PiPlayer.UniqueId*
+- uid: Pillars.Core.Player.Models.PiPlayer.Username
+  commentId: P:Pillars.Core.Player.Models.PiPlayer.Username
+  id: Username
+  parent: Pillars.Core.Player.Models.PiPlayer
+  langs:
+  - csharp
+  - vb
+  name: Username
+  nameWithType: PiPlayer.Username
+  fullName: Pillars.Core.Player.Models.PiPlayer.Username
+  type: Property
+  source:
+    remote:
+      path: src/Server/Core/Player/Models/PiPlayer.Mappings.cs
+      branch: main
+      repo: https://github.com/pillars-framework/docs
+    id: Username
+    path: ../src/Server/Core/Player/Models/PiPlayer.Mappings.cs
+    startLine: 13
+  assemblies:
+  - Pillars
+  namespace: Pillars.Core.Player.Models
+  syntax:
+    content: public string Username { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Username As String
+  overload: Pillars.Core.Player.Models.PiPlayer.Username*
+- uid: Pillars.Core.Player.Models.PiPlayer.Position
+  commentId: P:Pillars.Core.Player.Models.PiPlayer.Position
+  id: Position
+  parent: Pillars.Core.Player.Models.PiPlayer
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: PiPlayer.Position
+  fullName: Pillars.Core.Player.Models.PiPlayer.Position
+  type: Property
+  source:
+    remote:
+      path: src/Server/Core/Player/Models/PiPlayer.Mappings.cs
+      branch: main
+      repo: https://github.com/pillars-framework/docs
+    id: Position
+    path: ../src/Server/Core/Player/Models/PiPlayer.Mappings.cs
+    startLine: 15
+  assemblies:
+  - Pillars
+  namespace: Pillars.Core.Player.Models
+  syntax:
+    content: public FVector Position { get; }
+    parameters: []
+    return:
+      type: HogWarpSdk.Game.Types.FVector
+    content.vb: Public ReadOnly Property Position As FVector
+  overload: Pillars.Core.Player.Models.PiPlayer.Position*
+- uid: Pillars.Core.Player.Models.PiPlayer.Direction
+  commentId: P:Pillars.Core.Player.Models.PiPlayer.Direction
+  id: Direction
+  parent: Pillars.Core.Player.Models.PiPlayer
+  langs:
+  - csharp
+  - vb
+  name: Direction
+  nameWithType: PiPlayer.Direction
+  fullName: Pillars.Core.Player.Models.PiPlayer.Direction
+  type: Property
+  source:
+    remote:
+      path: src/Server/Core/Player/Models/PiPlayer.Mappings.cs
+      branch: main
+      repo: https://github.com/pillars-framework/docs
+    id: Direction
+    path: ../src/Server/Core/Player/Models/PiPlayer.Mappings.cs
+    startLine: 17
+  assemblies:
+  - Pillars
+  namespace: Pillars.Core.Player.Models
+  syntax:
+    content: public float Direction { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Direction As Single
+  overload: Pillars.Core.Player.Models.PiPlayer.Direction*
+- uid: Pillars.Core.Player.Models.PiPlayer.Speed
+  commentId: P:Pillars.Core.Player.Models.PiPlayer.Speed
+  id: Speed
+  parent: Pillars.Core.Player.Models.PiPlayer
+  langs:
+  - csharp
+  - vb
+  name: Speed
+  nameWithType: PiPlayer.Speed
+  fullName: Pillars.Core.Player.Models.PiPlayer.Speed
+  type: Property
+  source:
+    remote:
+      path: src/Server/Core/Player/Models/PiPlayer.Mappings.cs
+      branch: main
+      repo: https://github.com/pillars-framework/docs
+    id: Speed
+    path: ../src/Server/Core/Player/Models/PiPlayer.Mappings.cs
+    startLine: 19
+  assemblies:
+  - Pillars
+  namespace: Pillars.Core.Player.Models
+  syntax:
+    content: public float Speed { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Speed As Single
+  overload: Pillars.Core.Player.Models.PiPlayer.Speed*
+- uid: Pillars.Core.Player.Models.PiPlayer.IsInAir
+  commentId: P:Pillars.Core.Player.Models.PiPlayer.IsInAir
+  id: IsInAir
+  parent: Pillars.Core.Player.Models.PiPlayer
+  langs:
+  - csharp
+  - vb
+  name: IsInAir
+  nameWithType: PiPlayer.IsInAir
+  fullName: Pillars.Core.Player.Models.PiPlayer.IsInAir
+  type: Property
+  source:
+    remote:
+      path: src/Server/Core/Player/Models/PiPlayer.Mappings.cs
+      branch: main
+      repo: https://github.com/pillars-framework/docs
+    id: IsInAir
+    path: ../src/Server/Core/Player/Models/PiPlayer.Mappings.cs
+    startLine: 21
+  assemblies:
+  - Pillars
+  namespace: Pillars.Core.Player.Models
+  syntax:
+    content: public bool IsInAir { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsInAir As Boolean
+  overload: Pillars.Core.Player.Models.PiPlayer.IsInAir*
+- uid: Pillars.Core.Player.Models.PiPlayer.House
+  commentId: P:Pillars.Core.Player.Models.PiPlayer.House
+  id: House
+  parent: Pillars.Core.Player.Models.PiPlayer
+  langs:
+  - csharp
+  - vb
+  name: House
+  nameWithType: PiPlayer.House
+  fullName: Pillars.Core.Player.Models.PiPlayer.House
+  type: Property
+  source:
+    remote:
+      path: src/Server/Core/Player/Models/PiPlayer.Mappings.cs
+      branch: main
+      repo: https://github.com/pillars-framework/docs
+    id: House
+    path: ../src/Server/Core/Player/Models/PiPlayer.Mappings.cs
+    startLine: 23
+  assemblies:
+  - Pillars
+  namespace: Pillars.Core.Player.Models
+  syntax:
+    content: public byte House { get; }
+    parameters: []
+    return:
+      type: System.Byte
+    content.vb: Public ReadOnly Property House As Byte
+  overload: Pillars.Core.Player.Models.PiPlayer.House*
+- uid: Pillars.Core.Player.Models.PiPlayer.Gender
+  commentId: P:Pillars.Core.Player.Models.PiPlayer.Gender
+  id: Gender
+  parent: Pillars.Core.Player.Models.PiPlayer
+  langs:
+  - csharp
+  - vb
+  name: Gender
+  nameWithType: PiPlayer.Gender
+  fullName: Pillars.Core.Player.Models.PiPlayer.Gender
+  type: Property
+  source:
+    remote:
+      path: src/Server/Core/Player/Models/PiPlayer.Mappings.cs
+      branch: main
+      repo: https://github.com/pillars-framework/docs
+    id: Gender
+    path: ../src/Server/Core/Player/Models/PiPlayer.Mappings.cs
+    startLine: 25
+  assemblies:
+  - Pillars
+  namespace: Pillars.Core.Player.Models
+  syntax:
+    content: public byte Gender { get; }
+    parameters: []
+    return:
+      type: System.Byte
+    content.vb: Public ReadOnly Property Gender As Byte
+  overload: Pillars.Core.Player.Models.PiPlayer.Gender*
+- uid: Pillars.Core.Player.Models.PiPlayer.IsMounted
+  commentId: P:Pillars.Core.Player.Models.PiPlayer.IsMounted
+  id: IsMounted
+  parent: Pillars.Core.Player.Models.PiPlayer
+  langs:
+  - csharp
+  - vb
+  name: IsMounted
+  nameWithType: PiPlayer.IsMounted
+  fullName: Pillars.Core.Player.Models.PiPlayer.IsMounted
+  type: Property
+  source:
+    remote:
+      path: src/Server/Core/Player/Models/PiPlayer.Mappings.cs
+      branch: main
+      repo: https://github.com/pillars-framework/docs
+    id: IsMounted
+    path: ../src/Server/Core/Player/Models/PiPlayer.Mappings.cs
+    startLine: 27
+  assemblies:
+  - Pillars
+  namespace: Pillars.Core.Player.Models
+  syntax:
+    content: public bool IsMounted { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsMounted As Boolean
+  overload: Pillars.Core.Player.Models.PiPlayer.IsMounted*
+references:
+- uid: Pillars.Core.Player.Models
+  commentId: N:Pillars.Core.Player.Models
+  href: Pillars.html
+  name: Pillars.Core.Player.Models
+  nameWithType: Pillars.Core.Player.Models
+  fullName: Pillars.Core.Player.Models
+  spec.csharp:
+  - uid: Pillars
+    name: Pillars
+    href: Pillars.html
+  - name: .
+  - uid: Pillars.Core
+    name: Core
+    href: Pillars.Core.html
+  - name: .
+  - uid: Pillars.Core.Player
+    name: Player
+    href: Pillars.Core.Player.html
+  - name: .
+  - uid: Pillars.Core.Player.Models
+    name: Models
+    href: Pillars.Core.Player.Models.html
+  spec.vb:
+  - uid: Pillars
+    name: Pillars
+    href: Pillars.html
+  - name: .
+  - uid: Pillars.Core
+    name: Core
+    href: Pillars.Core.html
+  - name: .
+  - uid: Pillars.Core.Player
+    name: Player
+    href: Pillars.Core.Player.html
+  - name: .
+  - uid: Pillars.Core.Player.Models
+    name: Models
+    href: Pillars.Core.Player.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Pillars.Core.Player.Models.PiPlayer.#ctor*
+  commentId: Overload:Pillars.Core.Player.Models.PiPlayer.#ctor
+  href: Pillars.Core.Player.Models.PiPlayer.html#Pillars_Core_Player_Models_PiPlayer__ctor_HogWarpSdk_Game_Player_
+  name: PiPlayer
+  nameWithType: PiPlayer.PiPlayer
+  fullName: Pillars.Core.Player.Models.PiPlayer.PiPlayer
+  nameWithType.vb: PiPlayer.New
+  fullName.vb: Pillars.Core.Player.Models.PiPlayer.New
+  name.vb: New
+- uid: HogWarpSdk.Game.Player
+  commentId: T:HogWarpSdk.Game.Player
+  parent: HogWarpSdk.Game
+  isExternal: true
+  name: Player
+  nameWithType: Player
+  fullName: HogWarpSdk.Game.Player
+- uid: HogWarpSdk.Game
+  commentId: N:HogWarpSdk.Game
+  isExternal: true
+  name: HogWarpSdk.Game
+  nameWithType: HogWarpSdk.Game
+  fullName: HogWarpSdk.Game
+  spec.csharp:
+  - uid: HogWarpSdk
+    name: HogWarpSdk
+    isExternal: true
+  - name: .
+  - uid: HogWarpSdk.Game
+    name: Game
+    isExternal: true
+  spec.vb:
+  - uid: HogWarpSdk
+    name: HogWarpSdk
+    isExternal: true
+  - name: .
+  - uid: HogWarpSdk.Game
+    name: Game
+    isExternal: true
+- uid: Pillars.Core.Player.Models.PiPlayer.Player*
+  commentId: Overload:Pillars.Core.Player.Models.PiPlayer.Player
+  href: Pillars.Core.Player.Models.PiPlayer.html#Pillars_Core_Player_Models_PiPlayer_Player
+  name: Player
+  nameWithType: PiPlayer.Player
+  fullName: Pillars.Core.Player.Models.PiPlayer.Player
+- uid: Pillars.Core.Player.Models.PiPlayer.DiscordId*
+  commentId: Overload:Pillars.Core.Player.Models.PiPlayer.DiscordId
+  href: Pillars.Core.Player.Models.PiPlayer.html#Pillars_Core_Player_Models_PiPlayer_DiscordId
+  name: DiscordId
+  nameWithType: PiPlayer.DiscordId
+  fullName: Pillars.Core.Player.Models.PiPlayer.DiscordId
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
+- uid: Pillars.Core.Player.Models.PiPlayer.InternalPlayer*
+  commentId: Overload:Pillars.Core.Player.Models.PiPlayer.InternalPlayer
+  href: Pillars.Core.Player.Models.PiPlayer.html#Pillars_Core_Player_Models_PiPlayer_InternalPlayer
+  name: InternalPlayer
+  nameWithType: PiPlayer.InternalPlayer
+  fullName: Pillars.Core.Player.Models.PiPlayer.InternalPlayer
+- uid: HogWarpSdk.Internal.IPlayer
+  commentId: T:HogWarpSdk.Internal.IPlayer
+  parent: HogWarpSdk.Internal
+  isExternal: true
+  name: IPlayer
+  nameWithType: IPlayer
+  fullName: HogWarpSdk.Internal.IPlayer
+- uid: HogWarpSdk.Internal
+  commentId: N:HogWarpSdk.Internal
+  isExternal: true
+  name: HogWarpSdk.Internal
+  nameWithType: HogWarpSdk.Internal
+  fullName: HogWarpSdk.Internal
+  spec.csharp:
+  - uid: HogWarpSdk
+    name: HogWarpSdk
+    isExternal: true
+  - name: .
+  - uid: HogWarpSdk.Internal
+    name: Internal
+    isExternal: true
+  spec.vb:
+  - uid: HogWarpSdk
+    name: HogWarpSdk
+    isExternal: true
+  - name: .
+  - uid: HogWarpSdk.Internal
+    name: Internal
+    isExternal: true
+- uid: Pillars.Core.Player.Models.PiPlayer.Kick*
+  commentId: Overload:Pillars.Core.Player.Models.PiPlayer.Kick
+  href: Pillars.Core.Player.Models.PiPlayer.html#Pillars_Core_Player_Models_PiPlayer_Kick
+  name: Kick
+  nameWithType: PiPlayer.Kick
+  fullName: Pillars.Core.Player.Models.PiPlayer.Kick
+- uid: Pillars.Core.Player.Models.PiPlayer.Id*
+  commentId: Overload:Pillars.Core.Player.Models.PiPlayer.Id
+  href: Pillars.Core.Player.Models.PiPlayer.html#Pillars_Core_Player_Models_PiPlayer_Id
+  name: Id
+  nameWithType: PiPlayer.Id
+  fullName: Pillars.Core.Player.Models.PiPlayer.Id
+- uid: Pillars.Core.Player.Models.PiPlayer.ConnectionId*
+  commentId: Overload:Pillars.Core.Player.Models.PiPlayer.ConnectionId
+  href: Pillars.Core.Player.Models.PiPlayer.html#Pillars_Core_Player_Models_PiPlayer_ConnectionId
+  name: ConnectionId
+  nameWithType: PiPlayer.ConnectionId
+  fullName: Pillars.Core.Player.Models.PiPlayer.ConnectionId
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: Pillars.Core.Player.Models.PiPlayer.UniqueId*
+  commentId: Overload:Pillars.Core.Player.Models.PiPlayer.UniqueId
+  href: Pillars.Core.Player.Models.PiPlayer.html#Pillars_Core_Player_Models_PiPlayer_UniqueId
+  name: UniqueId
+  nameWithType: PiPlayer.UniqueId
+  fullName: Pillars.Core.Player.Models.PiPlayer.UniqueId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Pillars.Core.Player.Models.PiPlayer.Username*
+  commentId: Overload:Pillars.Core.Player.Models.PiPlayer.Username
+  href: Pillars.Core.Player.Models.PiPlayer.html#Pillars_Core_Player_Models_PiPlayer_Username
+  name: Username
+  nameWithType: PiPlayer.Username
+  fullName: Pillars.Core.Player.Models.PiPlayer.Username
+- uid: Pillars.Core.Player.Models.PiPlayer.Position*
+  commentId: Overload:Pillars.Core.Player.Models.PiPlayer.Position
+  href: Pillars.Core.Player.Models.PiPlayer.html#Pillars_Core_Player_Models_PiPlayer_Position
+  name: Position
+  nameWithType: PiPlayer.Position
+  fullName: Pillars.Core.Player.Models.PiPlayer.Position
+- uid: HogWarpSdk.Game.Types.FVector
+  commentId: T:HogWarpSdk.Game.Types.FVector
+  parent: HogWarpSdk.Game.Types
+  isExternal: true
+  name: FVector
+  nameWithType: FVector
+  fullName: HogWarpSdk.Game.Types.FVector
+- uid: HogWarpSdk.Game.Types
+  commentId: N:HogWarpSdk.Game.Types
+  isExternal: true
+  name: HogWarpSdk.Game.Types
+  nameWithType: HogWarpSdk.Game.Types
+  fullName: HogWarpSdk.Game.Types
+  spec.csharp:
+  - uid: HogWarpSdk
+    name: HogWarpSdk
+    isExternal: true
+  - name: .
+  - uid: HogWarpSdk.Game
+    name: Game
+    isExternal: true
+  - name: .
+  - uid: HogWarpSdk.Game.Types
+    name: Types
+    isExternal: true
+  spec.vb:
+  - uid: HogWarpSdk
+    name: HogWarpSdk
+    isExternal: true
+  - name: .
+  - uid: HogWarpSdk.Game
+    name: Game
+    isExternal: true
+  - name: .
+  - uid: HogWarpSdk.Game.Types
+    name: Types
+    isExternal: true
+- uid: Pillars.Core.Player.Models.PiPlayer.Direction*
+  commentId: Overload:Pillars.Core.Player.Models.PiPlayer.Direction
+  href: Pillars.Core.Player.Models.PiPlayer.html#Pillars_Core_Player_Models_PiPlayer_Direction
+  name: Direction
+  nameWithType: PiPlayer.Direction
+  fullName: Pillars.Core.Player.Models.PiPlayer.Direction
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Pillars.Core.Player.Models.PiPlayer.Speed*
+  commentId: Overload:Pillars.Core.Player.Models.PiPlayer.Speed
+  href: Pillars.Core.Player.Models.PiPlayer.html#Pillars_Core_Player_Models_PiPlayer_Speed
+  name: Speed
+  nameWithType: PiPlayer.Speed
+  fullName: Pillars.Core.Player.Models.PiPlayer.Speed
+- uid: Pillars.Core.Player.Models.PiPlayer.IsInAir*
+  commentId: Overload:Pillars.Core.Player.Models.PiPlayer.IsInAir
+  href: Pillars.Core.Player.Models.PiPlayer.html#Pillars_Core_Player_Models_PiPlayer_IsInAir
+  name: IsInAir
+  nameWithType: PiPlayer.IsInAir
+  fullName: Pillars.Core.Player.Models.PiPlayer.IsInAir
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Pillars.Core.Player.Models.PiPlayer.House*
+  commentId: Overload:Pillars.Core.Player.Models.PiPlayer.House
+  href: Pillars.Core.Player.Models.PiPlayer.html#Pillars_Core_Player_Models_PiPlayer_House
+  name: House
+  nameWithType: PiPlayer.House
+  fullName: Pillars.Core.Player.Models.PiPlayer.House
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: Pillars.Core.Player.Models.PiPlayer.Gender*
+  commentId: Overload:Pillars.Core.Player.Models.PiPlayer.Gender
+  href: Pillars.Core.Player.Models.PiPlayer.html#Pillars_Core_Player_Models_PiPlayer_Gender
+  name: Gender
+  nameWithType: PiPlayer.Gender
+  fullName: Pillars.Core.Player.Models.PiPlayer.Gender
+- uid: Pillars.Core.Player.Models.PiPlayer.IsMounted*
+  commentId: Overload:Pillars.Core.Player.Models.PiPlayer.IsMounted
+  href: Pillars.Core.Player.Models.PiPlayer.html#Pillars_Core_Player_Models_PiPlayer_IsMounted
+  name: IsMounted
+  nameWithType: PiPlayer.IsMounted
+  fullName: Pillars.Core.Player.Models.PiPlayer.IsMounted

@@ -1,0 +1,110 @@
+### YamlMime:ManagedReference
+items:
+- uid: Pillars.Core.Server.Events
+  commentId: N:Pillars.Core.Server.Events
+  id: Pillars.Core.Server.Events
+  children:
+  - Pillars.Core.Server.Events.ServerEvents
+  - Pillars.Core.Server.Events.ServerEvents.ServerShutdownDelegate
+  - Pillars.Core.Server.Events.ServerEvents.ServerStartedDelegate
+  langs:
+  - csharp
+  - vb
+  name: Pillars.Core.Server.Events
+  nameWithType: Pillars.Core.Server.Events
+  fullName: Pillars.Core.Server.Events
+  type: Namespace
+  assemblies:
+  - Pillars
+references:
+- uid: Pillars.Core.Server.Events.ServerEvents
+  commentId: T:Pillars.Core.Server.Events.ServerEvents
+  parent: Pillars.Core.Server.Events
+  href: Pillars.Core.Server.Events.ServerEvents.html
+  name: ServerEvents
+  nameWithType: ServerEvents
+  fullName: Pillars.Core.Server.Events.ServerEvents
+- uid: Pillars.Core.Server.Events.ServerEvents.ServerStartedDelegate
+  commentId: T:Pillars.Core.Server.Events.ServerEvents.ServerStartedDelegate
+  parent: Pillars.Core.Server.Events
+  href: Pillars.Core.Server.Events.ServerEvents.html
+  name: ServerEvents.ServerStartedDelegate
+  nameWithType: ServerEvents.ServerStartedDelegate
+  fullName: Pillars.Core.Server.Events.ServerEvents.ServerStartedDelegate
+  spec.csharp:
+  - uid: Pillars.Core.Server.Events.ServerEvents
+    name: ServerEvents
+    href: Pillars.Core.Server.Events.ServerEvents.html
+  - name: .
+  - uid: Pillars.Core.Server.Events.ServerEvents.ServerStartedDelegate
+    name: ServerStartedDelegate
+    href: Pillars.Core.Server.Events.ServerEvents.ServerStartedDelegate.html
+  spec.vb:
+  - uid: Pillars.Core.Server.Events.ServerEvents
+    name: ServerEvents
+    href: Pillars.Core.Server.Events.ServerEvents.html
+  - name: .
+  - uid: Pillars.Core.Server.Events.ServerEvents.ServerStartedDelegate
+    name: ServerStartedDelegate
+    href: Pillars.Core.Server.Events.ServerEvents.ServerStartedDelegate.html
+- uid: Pillars.Core.Server.Events.ServerEvents.ServerShutdownDelegate
+  commentId: T:Pillars.Core.Server.Events.ServerEvents.ServerShutdownDelegate
+  parent: Pillars.Core.Server.Events
+  href: Pillars.Core.Server.Events.ServerEvents.html
+  name: ServerEvents.ServerShutdownDelegate
+  nameWithType: ServerEvents.ServerShutdownDelegate
+  fullName: Pillars.Core.Server.Events.ServerEvents.ServerShutdownDelegate
+  spec.csharp:
+  - uid: Pillars.Core.Server.Events.ServerEvents
+    name: ServerEvents
+    href: Pillars.Core.Server.Events.ServerEvents.html
+  - name: .
+  - uid: Pillars.Core.Server.Events.ServerEvents.ServerShutdownDelegate
+    name: ServerShutdownDelegate
+    href: Pillars.Core.Server.Events.ServerEvents.ServerShutdownDelegate.html
+  spec.vb:
+  - uid: Pillars.Core.Server.Events.ServerEvents
+    name: ServerEvents
+    href: Pillars.Core.Server.Events.ServerEvents.html
+  - name: .
+  - uid: Pillars.Core.Server.Events.ServerEvents.ServerShutdownDelegate
+    name: ServerShutdownDelegate
+    href: Pillars.Core.Server.Events.ServerEvents.ServerShutdownDelegate.html
+- uid: Pillars.Core.Server.Events
+  commentId: N:Pillars.Core.Server.Events
+  href: Pillars.html
+  name: Pillars.Core.Server.Events
+  nameWithType: Pillars.Core.Server.Events
+  fullName: Pillars.Core.Server.Events
+  spec.csharp:
+  - uid: Pillars
+    name: Pillars
+    href: Pillars.html
+  - name: .
+  - uid: Pillars.Core
+    name: Core
+    href: Pillars.Core.html
+  - name: .
+  - uid: Pillars.Core.Server
+    name: Server
+    href: Pillars.Core.Server.html
+  - name: .
+  - uid: Pillars.Core.Server.Events
+    name: Events
+    href: Pillars.Core.Server.Events.html
+  spec.vb:
+  - uid: Pillars
+    name: Pillars
+    href: Pillars.html
+  - name: .
+  - uid: Pillars.Core
+    name: Core
+    href: Pillars.Core.html
+  - name: .
+  - uid: Pillars.Core.Server
+    name: Server
+    href: Pillars.Core.Server.html
+  - name: .
+  - uid: Pillars.Core.Server.Events
+    name: Events
+    href: Pillars.Core.Server.Events.html

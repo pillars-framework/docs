@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Pillars
+  commentId: N:Pillars
+  id: Pillars
+  children:
+  - Pillars.Bootstrapper
+  - Pillars.Plugin
+  langs:
+  - csharp
+  - vb
+  name: Pillars
+  nameWithType: Pillars
+  fullName: Pillars
+  type: Namespace
+  assemblies:
+  - Pillars
+references:
+- uid: Pillars.Bootstrapper
+  commentId: T:Pillars.Bootstrapper
+  href: Pillars.Bootstrapper.html
+  name: Bootstrapper
+  nameWithType: Bootstrapper
+  fullName: Pillars.Bootstrapper
+- uid: Pillars.Plugin
+  commentId: T:Pillars.Plugin
+  href: Pillars.Plugin.html
+  name: Plugin
+  nameWithType: Plugin
+  fullName: Pillars.Plugin

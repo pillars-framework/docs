@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Pillars.Database.Controllers
+  commentId: N:Pillars.Database.Controllers
+  id: Pillars.Database.Controllers
+  children:
+  - Pillars.Database.Controllers.DatabaseController
+  langs:
+  - csharp
+  - vb
+  name: Pillars.Database.Controllers
+  nameWithType: Pillars.Database.Controllers
+  fullName: Pillars.Database.Controllers
+  type: Namespace
+  assemblies:
+  - Pillars
+references:
+- uid: Pillars.Database.Controllers.DatabaseController
+  commentId: T:Pillars.Database.Controllers.DatabaseController
+  href: Pillars.Database.Controllers.DatabaseController.html
+  name: DatabaseController
+  nameWithType: DatabaseController
+  fullName: Pillars.Database.Controllers.DatabaseController

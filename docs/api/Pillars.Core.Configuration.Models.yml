@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Pillars.Core.Configuration.Models
+  commentId: N:Pillars.Core.Configuration.Models
+  id: Pillars.Core.Configuration.Models
+  children:
+  - Pillars.Core.Configuration.Models.AppSettings
+  langs:
+  - csharp
+  - vb
+  name: Pillars.Core.Configuration.Models
+  nameWithType: Pillars.Core.Configuration.Models
+  fullName: Pillars.Core.Configuration.Models
+  type: Namespace
+  assemblies:
+  - Pillars
+references:
+- uid: Pillars.Core.Configuration.Models.AppSettings
+  commentId: T:Pillars.Core.Configuration.Models.AppSettings
+  href: Pillars.Core.Configuration.Models.AppSettings.html
+  name: AppSettings
+  nameWithType: AppSettings
+  fullName: Pillars.Core.Configuration.Models.AppSettings

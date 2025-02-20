@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: Pillars.Core.DI.Interfaces.IController
+  commentId: T:Pillars.Core.DI.Interfaces.IController
+  id: IController
+  parent: Pillars.Core.DI.Interfaces
+  children:
+  - Pillars.Core.DI.Interfaces.IController.InitializeAsync
+  langs:
+  - csharp
+  - vb
+  name: IController
+  nameWithType: IController
+  fullName: Pillars.Core.DI.Interfaces.IController
+  type: Interface
+  source:
+    remote:
+      path: src/Server/Core/DI/Interfaces/IController.cs
+      branch: main
+      repo: https://github.com/pillars-framework/docs
+    id: IController
+    path: ../src/Server/Core/DI/Interfaces/IController.cs
+    startLine: 2
+  assemblies:
+  - Pillars
+  namespace: Pillars.Core.DI.Interfaces
+  syntax:
+    content: public interface IController
+    content.vb: Public Interface IController
+- uid: Pillars.Core.DI.Interfaces.IController.InitializeAsync
+  commentId: M:Pillars.Core.DI.Interfaces.IController.InitializeAsync
+  id: InitializeAsync
+  parent: Pillars.Core.DI.Interfaces.IController
+  langs:
+  - csharp
+  - vb
+  name: InitializeAsync()
+  nameWithType: IController.InitializeAsync()
+  fullName: Pillars.Core.DI.Interfaces.IController.InitializeAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Server/Core/DI/Interfaces/IController.cs
+      branch: main
+      repo: https://github.com/pillars-framework/docs
+    id: InitializeAsync
+    path: ../src/Server/Core/DI/Interfaces/IController.cs
+    startLine: 4
+  assemblies:
+  - Pillars
+  namespace: Pillars.Core.DI.Interfaces
+  syntax:
+    content: Task InitializeAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function InitializeAsync() As Task
+  overload: Pillars.Core.DI.Interfaces.IController.InitializeAsync*
+references:
+- uid: Pillars.Core.DI.Interfaces
+  commentId: N:Pillars.Core.DI.Interfaces
+  href: Pillars.html
+  name: Pillars.Core.DI.Interfaces
+  nameWithType: Pillars.Core.DI.Interfaces
+  fullName: Pillars.Core.DI.Interfaces
+  spec.csharp:
+  - uid: Pillars
+    name: Pillars
+    href: Pillars.html
+  - name: .
+  - uid: Pillars.Core
+    name: Core
+    href: Pillars.Core.html
+  - name: .
+  - uid: Pillars.Core.DI
+    name: DI
+    href: Pillars.Core.DI.html
+  - name: .
+  - uid: Pillars.Core.DI.Interfaces
+    name: Interfaces
+    href: Pillars.Core.DI.Interfaces.html
+  spec.vb:
+  - uid: Pillars
+    name: Pillars
+    href: Pillars.html
+  - name: .
+  - uid: Pillars.Core
+    name: Core
+    href: Pillars.Core.html
+  - name: .
+  - uid: Pillars.Core.DI
+    name: DI
+    href: Pillars.Core.DI.html
+  - name: .
+  - uid: Pillars.Core.DI.Interfaces
+    name: Interfaces
+    href: Pillars.Core.DI.Interfaces.html
+- uid: Pillars.Core.DI.Interfaces.IController.InitializeAsync*
+  commentId: Overload:Pillars.Core.DI.Interfaces.IController.InitializeAsync
+  href: Pillars.Core.DI.Interfaces.IController.html#Pillars_Core_DI_Interfaces_IController_InitializeAsync
+  name: InitializeAsync
+  nameWithType: IController.InitializeAsync
+  fullName: Pillars.Core.DI.Interfaces.IController.InitializeAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
