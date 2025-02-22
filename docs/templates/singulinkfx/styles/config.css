@@ -1,124 +1,125 @@
 /* Theme Configuration Options */
 
-:root 
-{
-    /* General */
+:root {
+	/* General */
 
-    --base-font-size: 16px;
-    --smalldevice-base-font-size: 14px; /* Base font size for devices < 1024px */
-    
-    --main-bg-color: #1f1f23;
-    --footer-bg-color: rgba(0,0,0,.4);
-    --separator-color: #42474f;
+	--base-font-size: 16px;
+	--smalldevice-base-font-size: 14px;
+	/* Base font size for devices < 1024px */
 
-    --table-strip-bg-color: #151515;
-    --table-header-bg-color: black;
-    --table-header-color: hsla(0,0%,100%,.8);
-    --table-header-border-color: #040405;
+	--main-bg-color: #1f1f23;
+	--footer-bg-color: rgba(0, 0, 0, .4);
+	--separator-color: #42474f;
 
-    /* Text */
+	--table-strip-bg-color: #151515;
+	--table-header-bg-color: black;
+	--table-header-color: hsla(0, 0%, 100%, .8);
+	--table-header-border-color: #040405;
 
-    --appname-color: white;
+	/* Text */
 
-    --h1-color: white;
-    --h2-color: #f2f2f2;
-    --h3-color: #e3e3e3;
-    --h4-color: #ffffff;
-    --h5-color: #e0e0e0;
+	--appname-color: white;
 
-    --text-color: #e1e1e1;
-    --link-color: #00b0f4;
-    --link-hover-color: #2ec4ff;
-    
-    /* Mobile Topbar */
+	--h1-color: white;
+	--h2-color: #f2f2f2;
+	--h3-color: #e3e3e3;
+	--h4-color: #ffffff;
+	--h5-color: #e0e0e0;
 
-    --topbar-bg-color: #18191c;
-    
-    /* Button */
+	--text-color: #e1e1e1;
+	--link-color: #00b0f4;
+	--link-hover-color: #2ec4ff;
 
-    --button-color: #747f8d;
+	/* Mobile Topbar */
 
-    /* Sidebar */
+	--topbar-bg-color: #18191c;
 
-    --sidebar-width: 400px;
-    --sidebar-bg-color: #292B30;
+	/* Button */
 
-    --search-color: #bdbdbd;
-    --search-bg-color: #1b1e21;
-    --search-searchicon-color: #e3e3e3;
-    --search-border-color: black;
+	--button-color: #747f8d;
 
-    --sidebar-item-color: white;
-    --sidebar-active-item-color: #00b0f4;
-    --sidebar-level1-item-bg-color: #222429;
-    --sidebar-level1-item-hover-bg-color: #1D1F22;
+	/* Sidebar */
 
-    --toc-filter-color: #bdbdbd;
-    --toc-filter-bg-color: #1b1e21;
-    --toc-filter-filtericon-color: #e3e3e3;
-    --toc-filter-clearicon-color: #e68585;
-    --toc-filter-border-color: black;
+	--sidebar-width: 400px;
+	--sidebar-bg-color: #292B30;
 
-    /* Scrollbars */
+	--search-color: #bdbdbd;
+	--search-bg-color: #1b1e21;
+	--search-searchicon-color: #e3e3e3;
+	--search-border-color: black;
 
-    --scrollbar-bg-color: transparent;
-    --scrollbar-thumb-bg-color: rgba(0,0,0,.4);
-    --scrollbar-thumb-border-color: transparent;
+	--sidebar-item-color: white;
+	--sidebar-active-item-color: #00b0f4;
+	--sidebar-level1-item-bg-color: #222429;
+	--sidebar-level1-item-hover-bg-color: #1D1F22;
 
-    /* Alerts and Blocks */
+	--toc-filter-color: #bdbdbd;
+	--toc-filter-bg-color: #1b1e21;
+	--toc-filter-filtericon-color: #e3e3e3;
+	--toc-filter-clearicon-color: #e68585;
+	--toc-filter-border-color: black;
 
-    --alert-info-border-color: rgba(114,137,218,.5);
-    --alert-info-bg-color: rgba(114,137,218,.1);
+	/* Scrollbars */
 
-    --alert-warning-border-color: rgba(250,166,26,.5);
-    --alert-warning-bg-color: rgba(250,166,26,.1);
+	--scrollbar-bg-color: transparent;
+	--scrollbar-thumb-bg-color: rgba(0, 0, 0, .4);
+	--scrollbar-thumb-border-color: transparent;
 
-    --alert-danger-border-color: rgba(240,71,71,.5);
-    --alert-danger-bg-color: rgba(240,71,71,.1);
+	/* Alerts and Blocks */
 
-    --alert-tip-border-color: rgba(255,255,255,.5);
-    --alert-tip-bg-color: rgba(255,255,255,.1);
+	--alert-info-border-color: rgba(114, 137, 218, .5);
+	--alert-info-bg-color: rgba(114, 137, 218, .1);
 
-    --blockquote-border-color: rgba(255,255,255,.5);
-    --blockquote-bg-color: rgba(255,255,255,.1);
+	--alert-warning-border-color: rgba(250, 166, 26, .5);
+	--alert-warning-bg-color: rgba(250, 166, 26, .1);
 
-    --breadcrumb-bg-color: #2f3136;
+	--alert-danger-border-color: rgba(240, 71, 71, .5);
+	--alert-danger-bg-color: rgba(240, 71, 71, .1);
 
-    /* Tabs */
+	--alert-tip-border-color: rgba(255, 255, 255, .5);
+	--alert-tip-bg-color: rgba(255, 255, 255, .1);
 
-    --nav-tabs-border-width: 1px;
-    --nav-tabs-border-color: #495057;
-    --nav-tabs-border-radius: .375rem;
-    --nav-tabs-link-hover-border-color: #303336 #303336 transparent;
-    --nav-tabs-link-active-color: white;
-    --nav-tabs-link-active-bg: var(--main-bg-color);
-    --nav-tabs-link-active-border-color: var(--nav-tabs-border-color) var(--nav-tabs-border-color) var(--main-bg-color);
+	--blockquote-border-color: rgba(255, 255, 255, .5);
+	--blockquote-bg-color: rgba(255, 255, 255, .1);
 
-    /* Inline Code */
+	--breadcrumb-bg-color: #2f3136;
 
-    --ref-bg-color: black;
-    --ref-color: #89d4f1;
+	/* Tabs */
 
-    /* Code Blocks */
+	--nav-tabs-border-width: 1px;
+	--nav-tabs-border-color: #495057;
+	--nav-tabs-border-radius: .375rem;
+	--nav-tabs-link-hover-border-color: #303336 #303336 transparent;
+	--nav-tabs-link-active-color: white;
+	--nav-tabs-link-active-bg: var(--main-bg-color);
+	--nav-tabs-link-active-border-color: var(--nav-tabs-border-color) var(--nav-tabs-border-color) var(--main-bg-color);
 
-    --code-bg-color: #151515;
-    --code-color: #d6deeb;
-    --code-keyword-color: #569cd6;
-    --code-comment-color: #57a64a;
-    --code-macro-color: #beb7ff;
-    --code-string-color: #d69d85;
-    --code-string-escape-color: #ffd68f;
-    --code-field-color: #c8c8c8;
-    --code-function-color: #dcdcaa;
-    --code-control-color: #d8a0df;
-    --code-class-color: #4ec9b0;
-    --code-number-color: #b5cea8;
-    --code-params-color: #9a9a9a;
-    --code-breakpoint-color: #8c2f2f;
+	/* Inline Code */
+
+	--ref-bg-color: black;
+	--ref-color: #89d4f1;
+
+	/* Code Blocks */
+
+	--code-bg-color: #151515;
+	--code-color: #d6deeb;
+	--code-keyword-color: #569cd6;
+	--code-comment-color: #57a64a;
+	--code-macro-color: #beb7ff;
+	--code-string-color: #d69d85;
+	--code-string-escape-color: #ffd68f;
+	--code-field-color: #c8c8c8;
+	--code-function-color: #dcdcaa;
+	--code-control-color: #d8a0df;
+	--code-class-color: #4ec9b0;
+	--code-number-color: #b5cea8;
+	--code-params-color: #9a9a9a;
+	--code-breakpoint-color: #8c2f2f;
 }
 
 /* Code Block Overrides */
 
-pre, legend {
-    --scrollbar-thumb-bg-color: #333;
+pre,
+legend {
+	--scrollbar-thumb-bg-color: #333;
 }

@@ -10,7 +10,11 @@
           ]
         }
       ],
-	  "dest": "api"
+	  "output": "api",
+	  "memberLayout": "separatePages",
+      "includeExplicitInterfaceImplementations": true,
+      "disableGitFeatures": true,
+      "disableDefaultFilter": false
     }
   ],
   "build": {
@@ -45,6 +49,7 @@
 	  "_enableNewTab": true,
 	  "_enableSearch": true,
       "pdf": false
-    }
+    },
+	"disableGitFeatures": true
   }
 }
