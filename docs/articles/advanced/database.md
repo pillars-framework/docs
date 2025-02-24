@@ -8,7 +8,10 @@ Please refer to the _MongoDB.Entities_ [documentation](https://mongodb-entities.
 
 ## Entities
 
-Pillars comes with several _Entities_ already included. An _Entity_ defines the structure of a database collection, see [here](https://mongodb-entities.com/wiki/Entities.html),
+Pillars comes with several _Entities_ already included. An _Entity_ defines the structure of a database collection, see [here](https://mongodb-entities.com/wiki/Entities.html).
+
+> [!WARNING]
+> For easier reference and extending of entities, it is recommended to have a common namespace `Pillars.Entities` across all entities.
 
 Example:
 

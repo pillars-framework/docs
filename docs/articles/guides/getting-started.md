@@ -27,7 +27,7 @@ For more information, please follow the [Configuration](configuration.md) guide.
 
 If the environment and configuration is set up correctly, the final build solution should automatically be placed in the corresponding `Mods` subfolder. You can now start your server by executing the `Server.Loader.exe`. If everything went successfully, you should now see something similiar to this:
 
-![ServerConsole](/images/getting-started/server_run.jpg)
+![ServerConsole](/docs/images/getting-started/server_run.jpg)
 
 ## (Optional) Debug
 
