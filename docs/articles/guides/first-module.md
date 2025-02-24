@@ -50,7 +50,7 @@ Server/
 
 ### LoginLog
 
-Now we'll create our first entity, the `LoginLog`, in which we make use of the `ICreatedOn` [auto-managed property](https://mongodb-entities.com/wiki/Entities.html?q=createdon) as the login `DateTime` and add an additional field for the logout `DateTime`. Remember, this is a [`One-To-Many`](https://mongodb-entities.com/wiki/Relationships-Referenced.html).
+Now we'll create our first entity, the `LoginLog`, in which we make use of the `ICreatedOn` [auto-managed property](https://mongodb-entities.com/wiki/Entities.html?q=createdon) as the login `DateTime` and add an additional field for the logout `DateTime`. We use the [`One-To-One`](https://mongodb-entities.com/wiki/Relationships-Referenced.html) behavior to be able to refer the entities to each other.
 
 `Server/LoginObserver/Entities/LoginLog.cs`:
 
@@ -91,9 +91,9 @@ namespace Pillars.Entities;
 public sealed partial class Account
 {
 	/// <summary>
-	/// Log, the last time account logged in / out
+	/// Log, the last time account logged in / out, as a reference
 	/// </summary>
-	public LoginLog? LastLogin { get; set; }
+	public One<LoginLog>? LastLogin { get; set; }
 
 	/// <summary>
 	/// The playtime of that account in seconds
@@ -133,7 +133,7 @@ public sealed class LoginObserverService(ILogger l)
 			LoginLog loginLog = new() { Account = acc.ToReference() };
 			await loginLog.SaveAsync();
 			// We embed the lastlogin for easier logout save
-			acc.LastLogin = loginLog;
+			acc.LastLogin = loginLog.ToReference();
 			await acc.SaveOnlyAsync(a => new { a.LastLogin });
 			return loginLog;
 		}
@@ -148,7 +148,7 @@ public sealed class LoginObserverService(ILogger l)
 }
 ```
 
-As you can see, the account is added as a reference (else we will save the entire entity), but we add the log as an entity to the account.
+As you can see, the account is added as a reference (else we will save the entire entity), and the same applies for the log entry.
 
 The `SaveOnlyAsync` ensures, that only the `LastLogin` field is updated. When working with partial entities, you may only update the fields you are responsible for.
 
@@ -255,7 +255,15 @@ private async Task UpdateAccountPlaytime(PiPlayer player)
 {
 	try
 	{
-		if (player.Account.LastLogin is null)
+		// Retrieve the last log entry based on ID, this should usually live in your service
+		// with a function like `GetLastLogin(...)`
+		LoginLog? lastLogin = player.Account.LastLogin?.ID is null
+			? null
+			: await DB.Find<LoginLog>()
+				.MatchID(player.Account.LastLogin.ID)
+				.ExecuteFirstAsync();
+
+		if (lastLogin is null)
 		{
 			_logger.Warning(
 				"Player #{pid} with AccountId {aid} has no login attached. Failed to calculate playtime!",
