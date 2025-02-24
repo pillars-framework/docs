@@ -16,20 +16,30 @@ The following steps will guide you through necessary installation steps.
 - [Pillars](https://github.com/pillars-framework/pillars) - Clone / download the project
 - The IDE of your choice - We recommend [Rider](https://www.jetbrains.com/rider/)
 
-## Environment & Configs
+## Step 1 - Environment & Configs
 
 The framework comes with a variety of `.template` files for your local environment and configuration.
-Clone / copy each file at their respective location and remove the `.template` file ending and adjust accordingly.
+
+**Clone / copy each file** at their respective location and remove the `.template` file ending and adjust their contents accordingly.
 
 For more information, please follow the [Configuration](configuration.md) guide.
 
-## Build & Start
+## Step 2 - Build & Start
 
-If the environment and configuration is set up correctly, the final build solution should automatically be placed in the corresponding `Mods` subfolder. You can now start your server by executing the `Server.Loader.exe`. If everything went successfully, you should now see something similiar to this:
+If the environment and configuration is set up correctly, the final build solution should automatically be placed in the corresponding `Mods` subfolder.
+
+You can now build your solution.
+
+You can now start your server by executing the `Server.Loader.exe`.
+If everything went successfully, you should now see something similiar to this:
 
 ![ServerConsole](/docs/images/getting-started/server_run.jpg)
 
-## (Optional) Debug
+### (Optional) Debug
 
 The official [HogWarp](https://docs.hogwarp.com/hogwarp/scripting/server-side/debugging) documentation has an excellent guide to enable debugging of your server. Give it a read!
+
+## Step 3 - Start developing
+
+You can now start developing your own server. Feel free to check out the guide to write your own [First Module](first-module.md).
 </div>

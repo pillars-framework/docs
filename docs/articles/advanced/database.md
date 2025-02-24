@@ -6,6 +6,10 @@ As of this writing, _Pillars_ only supports _MongoDB_ database, using the data a
 
 Please refer to the _MongoDB.Entities_ [documentation](https://mongodb-entities.com/wiki/Get-Started.html) to get a better understanding.
 
+## Configuration
+
+The database configuration can be changed in the [mongosettings.json](../guides/configuration.md#mongosettingsjson)
+
 ## Entities
 
 Pillars comes with several _Entities_ already included. An _Entity_ defines the structure of a database collection, see [here](https://mongodb-entities.com/wiki/Entities.html).

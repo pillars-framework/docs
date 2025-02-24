@@ -10,10 +10,9 @@ _layout: landing
 
 ## Summary
 
-**Pillars** is a _HogWarp_ "single-plugin-framework" ...
+**Welcome 👋!**
 
-> [!WARNING]
-> TODO
+**Pillars** is a _HogWarp_ "single-plugin-framework" for server development, but can be extended to your liking, with very little knowledge required but still offering lots of configuration and customization.
 
 ## Information and Links
 
