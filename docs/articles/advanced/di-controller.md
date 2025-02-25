@@ -94,7 +94,11 @@ By using the `IController` interface, we decouple the asynchronous initializatio
 
 Imagine a `DatabaseController` that needs to connect to a database during startup. Without `IController`, you’d have to block the thread (e.g., using `.Result` or `.Wait()`), which is bad practice and can lead to deadlocks. With `IController`, you can write:
 
+> [!WARNING]
+> If you use the `IController` interface, the `[RegisterSingleton]` attribute has to contain the type of the controller like this `[RegisterSingleton(typeof(DatabaseController))]`.
+
 ```c#
+[RegisterSingleton(typeof(DatabaseController))]
 public sealed class DatabaseController : IController
 {
     public async Task InitializeAsync()
