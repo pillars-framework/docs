@@ -18,7 +18,7 @@ Sending a message to a single player is as easy as
 
 * Injecting the @Pillars.Chat.Actors.ChatActor as a depedency
 * Determinig the target player
-* Calling @Pillars.Chat.Actors.ChatActor.SendMessageToPlayer with the target and provided content of the ChatActor
+* Calling `SendMessageToPlayer` in @Pillars.Chat.Actors.ChatActor with the target and provided content of the ChatActor
 
 ```c#
 [RegisterSingleton]
@@ -26,6 +26,7 @@ public class MyController(PlayerController _playerController, ChatActor _chatAct
 	
 	public async Task Something() 
 	{
+		// Determining the player
 		var player = _playerController...
 		_chatActor.SendMessageToPlayer(player, "Hello from MyController!");
 	}
@@ -61,6 +62,9 @@ Resulting in the following output:
 
 ![Builder Example](/docs/images/modules/chat/example.jpg)
 
+> [!NOTE]
+> The shown image contains a bug (from the client plugin) where the `Yellow` color is not correctly displayed.
+
 # Command Registration
 
 A chat command can be registered using the @Pillars.Chat.Attributes.SlashCommandAttribute . Optional args can be used, that are based on the player input, splitted along whitespaces `' '` **without** the command.
@@ -71,16 +75,20 @@ The second argument is optional.
 > The server will not start if an invalid attribute usage was detected
 
 ```c#
-[SlashCommand("example")]
-public async Task ExampleWithoutArguments(PiPlayer player)
-{
-	_chatActor.SendMessageToPlayer(player, $"You called the example without arguments");
-}
+[RegisterSingleton]
+public class MyController(ChatActor _chatActor) {
+	
+	[SlashCommand("example")]
+	public async Task ExampleWithoutArguments(PiPlayer player)
+	{
+		_chatActor.SendMessageToPlayer(player, $"You called the example without arguments");
+	}
 
-[SlashCommand("exampleargs")]
-public async Task ExampleWithArguments(PiPlayer player, string[] args)
-{
-	_chatActor.SendMessageToPlayer(player, $"You called the example with a total of {args.Length} arguments");
+	[SlashCommand("exampleargs")]
+	public async Task ExampleWithArguments(PiPlayer player, string[] args)
+	{
+		_chatActor.SendMessageToPlayer(player, $"You called the example with a total of {args.Length} arguments");
+	}
 }
 ```
 

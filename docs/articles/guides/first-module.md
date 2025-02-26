@@ -308,8 +308,19 @@ public async Task ValidateLogsAsync()
 
 ## Step 6 - Chat Command
 
-> [!WARNING]
-> TODO
+To register a chat command, it is recommend that you give the [Chat Module documentation](/docs/articles/modules/chat.md) a read, but it should be as easy as adding the following to your controller:
+
+```c#
+[SlashCommand("played")]
+private async Task ShowPlaytime(PiPlayer player)
+{
+	var playtime = player.Account.PlayTime;
+	var message = new ChatMessage.Builder(false)
+		.AddText($"Your total playtime is: {DateTimeHelper.FormatDuration((int)playtime)}")
+		.Build().Message;
+	_chatActor.SendMessageToPlayer(player, message);
+}
+```
 
 ## Step 7 - Further Improvements / Ideas
 
