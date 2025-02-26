@@ -2,3 +2,5 @@
   href: guides/toc.yml
 - name: Advanced
   href: advanced/toc.yml
+- name: Modules
+  href: modules/toc.yml
