@@ -55,7 +55,7 @@ builder.AddText("Yellow ", ChatTextStyle.Yellow);
 builder.AddText("Magenta ", ChatTextStyle.Magenta);
 builder.AddText("Cyan ", ChatTextStyle.Cyan);
 builder.AddSender(player.Username, ChatTextStyle.Server);
-SendMessage(player, builder.Build().Message);
+_chatActor.SendMessage(player, builder.Build().Message);
 ```
 
 Resulting in the following output:
