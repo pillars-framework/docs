@@ -31,4 +31,14 @@ Here is a list of features / modules that are provided with **Pillars**
 * [Chat](articles/modules/chat.md) - An easy to use chat module, including channels, commands and easy use of styles
 * [Schedules & Cycles](articles/modules/schedules.md) - Always wanted to do something at a specific time or in a long running interval? This is for you! (Yes it uses _cronexpressions_)
 
+## Roadmap
+
+Here is a list of features that we are currently - or will - work upon:
+
+* Chat - Extend the chat with **easy** channels / tabs
+* Spells - Add events when a player casts a spell, allow for granting / revoking a spell
+* Houses - Add more features to houses, like points, representatives etc.
+* Character - Add features to the character of the player, and natively interact with the inventory, etc.
+* Voice - Extend the current voice integration to allow different kinds of voice if possible
+
 </div>
