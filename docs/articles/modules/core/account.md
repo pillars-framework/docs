@@ -2,12 +2,8 @@
 
 # Account
 
-> [!WARNING]
-> TODO _Account Explanation_
+Each player (based on their *DiscordID*) is granted an @Pillars.Entities.Account . Upon connect, the account is associated with the current player.
 
-* Every player has an account, players without accounts are kicked (based on discordId)
-* Using *partial* to extend the account
-* Usage of AccountController to retrieve accounts (based on player, discordId, accountId)
-
+If you want to extend the account, e.g. add additional fields to the account, you can check out the [Database](../../advanced/database.md) documentation.
 
 </div>

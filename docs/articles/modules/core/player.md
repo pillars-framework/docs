@@ -3,7 +3,7 @@
 # Player
 
 > [!WARNING]
-> TODO: _PiPlayer Explanation_
+> TODO: _PiPlayer Explanation_ , including `IsValid`
 
 
 </div>

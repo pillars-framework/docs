@@ -3,10 +3,7 @@
 # Events
 
 > [!WARNING]
-> TODO
-
-* Übersicht aller vorhandenen Events, falls möglich
-* `Delegates` etc.
+> TODO : A collection of events wrapped from hogwarp, explaining delegates and events
 
 
 </div>
