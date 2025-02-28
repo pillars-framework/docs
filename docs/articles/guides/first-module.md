@@ -308,7 +308,7 @@ public async Task ValidateLogsAsync()
 
 ## Step 6 - Chat Command
 
-To register a chat command, it is recommend that you give the [Chat Module documentation](/docs/articles/modules/chat.md) a read, but it should be as easy as adding the following to your controller:
+To register a chat command, it is recommend that you give the [Chat Module](../modules/chat.md) documentation a read, but it should be as easy as adding the following to your controller:
 
 ```c#
 [SlashCommand("played")]

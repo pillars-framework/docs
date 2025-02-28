@@ -26,8 +26,9 @@ Here are some additonal links to get you started:
 
 Here is a list of features / modules that are provided with **Pillars**
 
-* _Accounts_ - Each player comes automatically with an account, ready for your properties to extend it
-* [Chat](/docs/articles/modules/chat.md) - An easy to use chat module, including channels, commands and easy use of styles
-* _Schedules & Cycles_ - Always wanted to do something at a specific time or in a long running interval? This is for you! (Yes it uses _cronexpressions_)
+* [Accounts](articles/modules/core/account.md) - Each player comes automatically with an account, ready for your properties to extend it
+* [Async](articles/advanced/async-single-plugin.md) - Enforced async behavior
+* [Chat](articles/modules/chat.md) - An easy to use chat module, including channels, commands and easy use of styles
+* [Schedules & Cycles](articles/modules/schedules.md) - Always wanted to do something at a specific time or in a long running interval? This is for you! (Yes it uses _cronexpressions_)
 
 </div>

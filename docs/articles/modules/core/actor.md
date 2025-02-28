@@ -8,14 +8,14 @@ The wrapper will automatically spawn its corresponding *WorldActor* instance upo
 
 ## Usage
 
-If you have a generated actor from a blueprint, you simply create a [Singleton](/docs/articles/advanced/di-controller.md) that provides the blueprint actor as a generic and associate this singleton as the *ParentActor*.
+If you have a generated actor from a blueprint, you simply create a [Singleton](../../advanced/di-controller.md) that provides the blueprint actor as a generic and associate this singleton as the *ParentActor*.
 
 > [!IMPORTANT]
-> It is **highly** recommended that the actor only exposes the [PiPlayer](/docs/articles/modules/core/player.md) to the *DI*, using the @Pillars.Core.Player.Controllers.PlayerController , so there is a clear seperation between all *natives* and *pillars* models.
+> It is **highly** recommended that the actor only exposes the [PiPlayer](../core/player.md) to the *DI*, using the @Pillars.Core.Player.Controllers.PlayerController , so there is a clear seperation between all *natives* and *pillars* models.
 
 ## Example
 
-The following example is taken from the [Chat Module](/docs/articles/modules/chat.md) and its @Pillars.Chat.Actors.ChatActor implementation.
+The following example is taken from the [Chat Module](../chat.md) and its @Pillars.Chat.Actors.ChatActor implementation.
 
 ```cs
 [RegisterSingleton]
