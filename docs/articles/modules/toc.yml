@@ -1,3 +1,5 @@
+- name: Core
+  href: core/toc.yml
 - name: Chat
   href: chat.md
 - name: Schedules

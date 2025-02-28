@@ -1,3 +1,5 @@
+- name: Async / Single Plugin
+  href: async-single-plugin.md
 - name: Database
   href: database.md
 - name: DI / Controller
