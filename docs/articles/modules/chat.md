@@ -18,7 +18,7 @@ Sending a message to a single player is as easy as
 
 * Injecting the @Pillars.Chat.Actors.ChatActor as a depedency
 * Determinig the target player
-* Calling `SendMessageToPlayer` in @Pillars.Chat.Actors.ChatActor with the target and provided content of the ChatActor
+* Calling `SendMessage` in @Pillars.Chat.Actors.ChatActor with the target and provided content of the ChatActor
 
 ```c#
 [RegisterSingleton]
@@ -28,7 +28,7 @@ public class MyController(PlayerController _playerController, ChatActor _chatAct
 	{
 		// Determining the player
 		var player = _playerController...
-		_chatActor.SendMessageToPlayer(player, "Hello from MyController!");
+		_chatActor.SendMessage(player, "Hello from MyController!");
 	}
 }
 ```
@@ -81,13 +81,13 @@ public class MyController(ChatActor _chatActor) {
 	[SlashCommand("example")]
 	public async Task ExampleWithoutArguments(PiPlayer player)
 	{
-		_chatActor.SendMessageToPlayer(player, $"You called the example without arguments");
+		_chatActor.SendMessage(player, $"You called the example without arguments");
 	}
 
 	[SlashCommand("exampleargs")]
 	public async Task ExampleWithArguments(PiPlayer player, string[] args)
 	{
-		_chatActor.SendMessageToPlayer(player, $"You called the example with a total of {args.Length} arguments");
+		_chatActor.SendMessage(player, $"You called the example with a total of {args.Length} arguments");
 	}
 }
 ```

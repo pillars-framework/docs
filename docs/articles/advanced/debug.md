@@ -3,9 +3,7 @@
 # Debug Mode
 
 > [!WARNING]
-> TODO
-
-* Debug Mode erklären und was alles passiert wenn man "Debug" in den appsettings aktiviert
+> TODO: Document debug mode, explaining appsettings, `logger.Debug` etc.
 
 
 </div>
