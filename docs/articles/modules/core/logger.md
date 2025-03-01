@@ -6,7 +6,7 @@
 
 ## Configuration
 
-Via configuration you can pipe the output to files, databases, w/e you like. The logger configuration can be changed in the [loggersettings.json](../guides/configuration.md#loggersettingsjson).
+Via configuration you can pipe the output to files, databases, w/e you like. The logger configuration can be changed in the [loggersettings.json](../../guides/configuration.md#loggersettingsjson).
 
 ## Usage
 
