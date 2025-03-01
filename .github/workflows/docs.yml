@@ -33,6 +33,19 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: '8.0.x'
+
+    - name: Add NuGet Package Reference
+      shell: pwsh
+      run: |
+        $csprojPath = "src/Server/Server.csproj"
+        $xml = [xml](Get-Content $csprojPath)
+        $itemGroup = $xml.CreateElement("ItemGroup")
+        $packageReference = $xml.CreateElement("PackageReference")
+        $packageReference.SetAttribute("Include", "Pillars.HogWarpSdk")
+        $packageReference.SetAttribute("Version", "0.8.0-beta.2")
+        $itemGroup.AppendChild($packageReference)
+        $xml.Project.AppendChild($itemGroup)
+        $xml.Save($csprojPath)
         
     - name: Install DocFx
       run: dotnet tool install -g docfx
