@@ -157,4 +157,10 @@ See history section above.
 
 Have any questions or remarks? Feel free to reach out 🙂.
 
+# Improvements / TODOs
+
+A list of improvements / todos for the schedules / cycles :
+
+* Add possibility to "silent" a cycle / schedule, so a history is saved, but no logs are triggered
+
 </div>

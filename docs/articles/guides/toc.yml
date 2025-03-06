@@ -1,5 +1,7 @@
 - name: Getting Started
   href: getting-started.md
+- name: Client Mods
+  href: client-mods.md
 - name: Configuration
   href: configuration.md
 - name: First Module

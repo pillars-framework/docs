@@ -102,4 +102,29 @@ Switching channels can be done via the `/house` or `/global` command.
 
 There will be improvements to chat in regards to that later 😊.
 
+# Improvements / TODOs
+
+A list of improvements / todos for the chat :
+
+* Keep a clientside history of each message sent, that the player can _"navigate through"_ using `up / down arrow`
+* Add some chat settings
+	* Resize the chat
+	* Show background:
+		* Always
+		* Never
+		* Only when active
+	* Sound Effects On / Off
+	* Save those settings to the account
+* Channels
+	* Make channels dynamically (provided by server)
+	* Possibility to talk to channel usinig a designated prefix
+* Whisper
+	* Add whisper functionality with `@username`
+* Blocklist
+	* Possibility to have a blocklist for whispers
+	* Possibility to have a generic blocklist
+	* Bind blocklist to account
+
+	
+
 </div>

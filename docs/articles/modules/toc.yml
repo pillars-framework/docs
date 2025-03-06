@@ -2,5 +2,7 @@
   href: core/toc.yml
 - name: Chat
   href: chat.md
+- name: Notification
+  href: notification.md
 - name: Schedules
   href: schedules.md
