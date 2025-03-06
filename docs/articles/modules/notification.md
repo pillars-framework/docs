@@ -4,6 +4,8 @@
 
 The _NotificationModule_ is a module that provides the feature for triggering notifications.
 
+![Icon Overview](/docs/images/modules/notification/example.jpg)
+
 ## Feature Overview
 
 1. Single *Actor* for triggering notifications to players ✅
