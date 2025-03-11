@@ -5,12 +5,16 @@
 The _ChatModule_ is a module containing several features and functionality.
 It is based on the [HogWarpChat](https://github.com/tiltedphoques/HogWarpChat).
 
+![Chat Window](/docs/images/modules/chat/example.jpg)
+
 ## Feature Overview
 
 1. Single *Actor* for sending messages to players ✅
 2. Full control with builder pattern for complex chat messages ✅
 3. Simple command registration with Attribute ✅
 4. Offers different channels (House, Global, ...) ✅
+5. Chat message commit history (using `up` / `down` arrow) ✅
+6. Player-specific settings ✅
 
 # Sending a Message
 
@@ -58,12 +62,7 @@ builder.AddSender(player.Username, ChatTextStyle.Server);
 _chatActor.SendMessage(player, builder.Build().Message);
 ```
 
-Resulting in the following output:
-
-![Builder Example](/docs/images/modules/chat/example.jpg)
-
-> [!NOTE]
-> The shown image contains a bug (from the client plugin) where the `Yellow` color is not correctly displayed.
+Resulting in the output shown in the image in the top.
 
 # Command Registration
 
@@ -102,19 +101,28 @@ Switching channels can be done via the `/house` or `/global` command.
 
 There will be improvements to chat in regards to that later 😊.
 
+# Settings
+
+Each player can specify their own settings of the chat, e.g.
+
+* Width
+* Height
+* FontSize (TextScale)
+
+These settings are saved when the settings window gets closed. These settings are saved in the database using the @Pillars.Entities.ChatSettings entity.
+
+![Settings Window](/docs/images/modules/chat/settings.jpg)
+
 # Improvements / TODOs
 
 A list of improvements / todos for the chat :
 
-* Keep a clientside history of each message sent, that the player can _"navigate through"_ using `up / down arrow`
-* Add some chat settings
-	* Resize the chat
+* Add some more settings
 	* Show background:
 		* Always
 		* Never
 		* Only when active
 	* Sound Effects On / Off
-	* Save those settings to the account
 * Channels
 	* Make channels dynamically (provided by server)
 	* Possibility to talk to channel usinig a designated prefix
@@ -124,7 +132,7 @@ A list of improvements / todos for the chat :
 	* Possibility to have a blocklist for whispers
 	* Possibility to have a generic blocklist
 	* Bind blocklist to account
-
-	
+* Command Auto-Complete
+	* When player starts typing with `/`, offer a list of possible commands to possibly select from
 
 </div>
